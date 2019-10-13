@@ -1,2 +1,2 @@
 # Python-Caesar-Cipher
-This outputs a random Caesar cipher based on the inputted message. 
+This program outputs a Caesar cipher using a randomly-generated key. 
