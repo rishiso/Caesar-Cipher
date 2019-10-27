@@ -11,15 +11,11 @@ newMessage = ''
 
 for char in message:
     if char.isalpha() == True and char.islower() == True:
-        position = alphabet.find(char)
-        newPosition = (position + key) % 26
-        newChar = alphabet[newPosition]
-        newMessage += newChar
+        newPosition = (alphabet.find(char) + key) % 26
+        newMessage += alphabet[newPosition]
     elif char.isalpha() == True and char.isupper() == True:
-        position = alphabet_cap.find(char)
-        newPosition = (position + key) % 26
-        newChar = alphabet_cap[newPosition]
-        newMessage += newChar
+        newPosition = (alphabet_cap.find(char) + key) % 26
+        newMessage += alphabet_cap[newPosition]
     else:
         newMessage += char
 
