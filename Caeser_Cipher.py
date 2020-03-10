@@ -8,10 +8,10 @@ alphabet_cap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def scramble(message):
     newMessage = ''
     for char in message:
-        if char.isalpha() == True and char.islower() == True:
+        if char.isalpha() and char.islower():
             newPosition = (alphabet.find(char) + key) % 26
             newMessage += alphabet[newPosition]
-        elif char.isalpha() == True and char.isupper() == True:
+        elif char.isalpha() and char.isupper():
             newPosition = (alphabet_cap.find(char) + key) % 26
             newMessage += alphabet_cap[newPosition]
         else:
